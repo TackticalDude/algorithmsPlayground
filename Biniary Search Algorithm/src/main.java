@@ -1,9 +1,7 @@
-
 public class main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		NAW intstance1 = new NAW();
+		/*NAW intstance1 = new NAW();
 		NAW intstance2 = new NAW();
 		NAW intstance3 = new NAW();
 		NAW intstance4 = new NAW();
@@ -43,9 +41,26 @@ public class main {
 		array.printArray();
 		System.out.println("------------------------------------");
 		array.removeAllInstancesByName("name3");
-		array.printArray();
+		array.printArray();*/
 		
+		int lowerBound = 0 , nElems = 8;
+		int upperBound = nElems-1;
+		int curIn = 0;
+		int searchKey = 39;
+		int a[] = {1,3,6,10,15,21,28,0,0,0,0}; 
 		
+		while(true){
+			curIn = (lowerBound + upperBound)/2;
+			if(a[curIn]==searchKey){
+				System.out.println("currIn: "+curIn);
+				break;
+			}else if(lowerBound > upperBound){
+				System.out.println("nElems: "+nElems+" upperBound: "+upperBound+" lowerBound: "+lowerBound);
+				break;
+			}else{
+				if(a[curIn] < searchKey)lowerBound = curIn + 1;
+				else upperBound = curIn - 1; //
+			}
+		}
 	}
-
 }

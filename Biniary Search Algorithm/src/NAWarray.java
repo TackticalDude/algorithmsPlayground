@@ -18,6 +18,16 @@ public class NAWarray {
 	}
 	
 	/**
+	 * @name addNAWToArrayInPos
+	 * @param naw - NAW object that should be added to the array
+	 * @param index - the position of the added object in the array
+	 */
+	void addNAWToArrayInPos(NAW naw, int index){
+		arrayNaw[index] = naw;
+		arraynaw_size++;
+	}
+	
+	/**
 	 * @name getIndexByName
 	 * @param nameInput - name of the instance in String format
 	 * @param startIndex - the index on wich to start to search (give a negative number to apply reverse search)
