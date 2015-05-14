@@ -48,8 +48,8 @@ public class NAW {
 	/**
 	 * @name compareTo
 	 * @param anotherNaw - compare the object that calls the function with the object in the parameter.
-	 * @return -3 when only the woonplaats is not the same. -2 when the woonplaats is the same. 
-	 * 			-1 when the woonplaats and name are the same and 0 when the name,woonplaats and adres are the same.
+	 * @return -3 when only the woonplaats is not the same. -2 when woonplaats is the same. 
+	 * 			-1 when woonplaats and name are the same and 0 when the name,woonplaats and adres are the same.
 	 */
 	public int compareTo(NAW anotherNaw){
 		int compareVal;
