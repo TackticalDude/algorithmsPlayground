@@ -14,7 +14,7 @@ public class main {
 		NAW intstance6 = new NAW();
 		
 		intstance1.setAdres("gadres");
-		intstance1.setName("cname");
+		intstance1.setName("dname");
 		intstance1.setWoonplaats("bwoonplaats");
 		
 		intstance2.setAdres("badres");
