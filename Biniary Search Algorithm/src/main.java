@@ -1,48 +1,57 @@
 public class main {
 
 	public static void main(String[] args) {
-		/*NAW intstance1 = new NAW();
+		/*String test1 = "abce";
+		String test2 = "bbcd";
+		
+		System.out.println(test1.compareTo(test2));*/
+		
+		NAW intstance1 = new NAW();
 		NAW intstance2 = new NAW();
 		NAW intstance3 = new NAW();
 		NAW intstance4 = new NAW();
+		NAW intstance5 = new NAW();
+		NAW intstance6 = new NAW();
 		
-		intstance1.setAdres("adres1");
-		intstance1.setName("name1");
-		intstance1.setWoonplaats("woonplaats1");
+		intstance1.setAdres("gadres");
+		intstance1.setName("dname");
+		intstance1.setWoonplaats("bwoonplaats");
 		
-		intstance2.setAdres("adres2");
-		intstance2.setName("name2");
-		intstance2.setWoonplaats("woonplaats2");
+		intstance2.setAdres("badres");
+		intstance2.setName("aname");
+		intstance2.setWoonplaats("cwoonplaats");
 		
-		intstance3.setAdres("adres3");
-		intstance3.setName("name3");
-		intstance3.setWoonplaats("woonplaats3");
+		intstance5.setAdres("aadres");
+		intstance5.setName("vname");
+		intstance5.setWoonplaats("gwoonplaats");
 		
-		intstance4.setAdres("adres3");
-		intstance4.setName("name4");
-		intstance4.setWoonplaats("woonplaats3");
+		intstance3.setAdres("cadres");
+		intstance3.setName("bname");
+		intstance3.setWoonplaats("vwoonplaats");
+		
+		intstance4.setAdres("aadres");
+		intstance4.setName("cname");
+		intstance4.setWoonplaats("gwoonplaats");
+		
+		intstance6.setAdres("gadres");
+		intstance6.setName("bname");
+		intstance6.setWoonplaats("vwoonplaats");
 		
 		NAWarray array = new NAWarray();
 		array.printArray();
 		array.addNAWtoArray(intstance1);
 		array.addNAWtoArray(intstance2);
 		array.addNAWtoArray(intstance3);
-		array.addNAWtoArray(intstance3);
 		array.addNAWtoArray(intstance4);
-		array.addNAWtoArray(intstance3);
-		array.addNAWtoArray(intstance3);
+		array.addNAWtoArray(intstance5);
+		array.addNAWtoArray(intstance6);
 		array.printArray();
 		
-		System.out.println("------------------------------------");
-		array.removeFirstInstanceByName("name3");
+		ArraySorter ars = new ArraySorter();
+		ars.bubbleSortNAWArray(array);
+		System.out.println("---------------------------------");
 		array.printArray();
-		System.out.println("------------------------------------");
-		array.removeLastInstanceByName("name3");
-		array.printArray();
-		System.out.println("------------------------------------");
-		array.removeAllInstancesByName("name3");
-		array.printArray();*/
-		
+		/*
 		int lowerBound = 0 , nElems = 8;
 		int upperBound = nElems-1;
 		int curIn = 0;
@@ -61,6 +70,6 @@ public class main {
 				if(a[curIn] < searchKey)lowerBound = curIn + 1;
 				else upperBound = curIn - 1; //
 			}
-		}
+		}*/
 	}
 }

@@ -9,6 +9,10 @@ public class NAWarray {
 	protected NAW arrayNaw[] = new NAW[20];
 	protected int arraynaw_size = 0;
 	
+	int getLength(){
+		return arraynaw_size;
+	}
+	
 	/**
 	 * @name addNAWtoArray
 	 * @param naw - NAW object that should be added to the array
@@ -87,6 +91,15 @@ public class NAWarray {
 			if(arrayNaw[i].getAdres().equals(adresInput) 
 					&& arrayNaw[i].getWoonplaats().equals(woonplaatsInput)) return i;
 		return -1;
+	}
+	
+	/**
+	 * @name getNawByIndex
+	 * @param index - index of the naw in the array
+	 * @return the naw object on the index
+	 */
+	NAW getNAWByIndex(int index){
+		return arrayNaw[index];
 	}
 	
 	/**
@@ -173,13 +186,27 @@ public class NAWarray {
 	}
 	
 	/**
+	 * @name switchTwoNAWs
+	 * @param posOne - index of naw object 1 in array
+	 * @param posTwo - index of naw object 2 in array
+	 * @brief switches two NAW object
+	 */
+	void switchTwoNAWs(int posOne, int posTwo){
+		if(posOne>0 && posOne<arraynaw_size && posTwo>0 && posTwo<arraynaw_size){
+			NAW temp = arrayNaw[posOne];
+			arrayNaw[posOne] = arrayNaw[posTwo];
+			arrayNaw[posTwo] = temp;
+		}
+	}
+	
+	/**
 	 * @name printArray
 	 * @brief prints the arraynaw array to the console
 	 */
 	void printArray(){
 		for(int i=0; i<arraynaw_size; i++){
-			System.out.print(arrayNaw[i].getName());
-			System.out.print(arrayNaw[i].getAdres());
+			System.out.print(arrayNaw[i].getName() +" ");
+			System.out.print(arrayNaw[i].getAdres() +" ");
 			System.out.println(arrayNaw[i].getWoonplaats());
 		}
 	}
