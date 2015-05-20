@@ -25,7 +25,7 @@ ERROR_NAMES SearchEngine::startFileSearch(std::string fd, int number){
 	std::ifstream fp;
 	std::string line;
 	if (number < 0) return INVALID_NUMBER;
-	std::string num = std::to_string(number);
+	string num = to_string(number);
 	int result = 0;
 	fp.open(fd);
 	if (fp.is_open()){													//check whether file is opened
