@@ -1,12 +1,50 @@
 public class main {
 
+	public static int findNumber(int a[], int number, int startIndex){
+		int reverse = 1;
+		if(startIndex < 0) reverse = -1;
+		
+		for(int i=(startIndex*reverse); i<a.length*reverse;i+=reverse)
+			if(a[i]==number) return i;
+		return -1;
+	}
+	
+	public static int getIndex(int a[], int number){
+		int half_size = (0 + a.length) / 2;
+		int prev_half_size = half_size;
+		while(true){
+			System.out.println(half_size);
+			int compValue = 0;
+			if(number < a[half_size]) compValue = -1;
+			else if(number > a[half_size]) compValue = 1;
+
+			if (compValue < 0) half_size /= 2;
+			else if (compValue > 0) half_size = half_size + (half_size / 2);
+			else return half_size;
+			
+			if(half_size == prev_half_size) return 0-half_size;
+			prev_half_size = half_size;
+		}
+	}
+	
 	public static void main(String[] args) {
+		int a[] = new int[100];
+		for(int i=0;i<100;i++){
+			a[i] = i+1;
+		}
+		for(int i=0;i<100;i++){
+			getIndex(a,98);
+		}
+		/*System.out.println("----------------------------");
+		for(int i=0;i<100;i++){
+			System.out.println(getIndex(a,89));
+		}*/
 		/*String test1 = "abce";
 		String test2 = "bbcd";
 		
 		System.out.println(test1.compareTo(test2));*/
 		
-		NAW intstance1 = new NAW();
+		/*NAW intstance1 = new NAW();
 		NAW intstance2 = new NAW();
 		NAW intstance3 = new NAW();
 		NAW intstance4 = new NAW();
@@ -50,7 +88,7 @@ public class main {
 		ArraySorter ars = new ArraySorter();
 		ars.bubbleSortNAWArray(array);
 		System.out.println("---------------------------------");
-		array.printArray();
+		array.printArray();*/
 		/*
 		int lowerBound = 0 , nElems = 8;
 		int upperBound = nElems-1;
