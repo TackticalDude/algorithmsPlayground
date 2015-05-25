@@ -60,21 +60,20 @@ public class ArraySorter {
 			for (inner = 0; inner < outer; inner++) {
 				String name1 = nawArray.getNAWByIndex(inner).getName();
 				String name2 = nawArray.getNAWByIndex(inner+1).getName();
-				if (name2.compareToIgnoreCase(name1)>=0){				//problem first element does not get sorted??
+				if (name2.compareToIgnoreCase(name1)>=0){				
 					nawArray.switchTwoNAWs(inner, inner+1);
 				}
 			}
 		}
-		//sort woonplaats
-		/*for (outer = nawArray.getLength()-1; outer > 0; outer--) {
+		for (outer = nawArray.getLength()-1; outer > 0; outer--) {
 			for (inner = 0; inner < outer; inner++) {
-				String name1 = nawArray.getNAWByIndex(inner).getWoonplaats();
-				String name2 = nawArray.getNAWByIndex(inner+1).getWoonplaats();
-				if (name2.compareToIgnoreCase(name1)>=0){
+				String woonplaats1 = nawArray.getNAWByIndex(inner).getWoonplaats();
+				String woonplaats2 = nawArray.getNAWByIndex(inner+1).getWoonplaats();
+				if (woonplaats2.compareToIgnoreCase(woonplaats1)>=0){
 					nawArray.switchTwoNAWs(inner, inner+1);
 				}
 			}
-		}*/
+		}
 	}
 	
 	public void insertionSortNAWArray(NAW nawArray[], int startPosition){

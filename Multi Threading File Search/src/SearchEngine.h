@@ -15,6 +15,7 @@
 #include <sstream>
 #include <dirent.h>
 #include <map>
+using namespace std;
 
 /*
 * SUCCES - when nothing goes wrong
