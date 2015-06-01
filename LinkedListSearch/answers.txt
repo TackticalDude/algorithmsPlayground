@@ -1,0 +1,8 @@
+Deel1:
+
+- O(N^2+2N) N^2 want is bubble sort, 2N voor 2x de getLinkAt 
+
+Deel2:
+
+- O(N^2) N^2 want het is bubble sort, het is dus hetzelfde als in een array
+- Uit gegevens blijkt N^2

@@ -9,7 +9,7 @@ public class LinkedList {
 	 */
 	public LinkedList(Link first){
 		begin = first;
-		length = 0;
+		length = 1;
 	}
 	
 	/**
