@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		int regAmount, simuTime, maxCustomers, maxRegPros;
 		Scanner in = new Scanner(System.in);
 
@@ -22,6 +22,6 @@ public class Main {
 
 		Simulation s = new Simulation();
 		s.startSimulation(regAmount, maxCustomers, maxRegPros, simuTime);
-	}*/
+	}
 
 }
