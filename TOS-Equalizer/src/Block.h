@@ -14,11 +14,12 @@
 class Block {
 private:
 	int _ID;
-	char* _dataChunk;
+	short* _dataChunk;
 	int _size;
 public:
-	Block(int ID, char* datachunk, int size);
-	char *getDataChunk();
+	Block(int ID, short* datachunk, int size);
+	short *getDataChunk();
+	int getSize();
 	virtual ~Block();
 };
 

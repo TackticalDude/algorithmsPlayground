@@ -15,7 +15,7 @@ void FileParser::parseFile(Queue *q, std::string fileName) {
 	FILE *fp;
 	int blocksNeeded = 0, currSize = 0;
 	long fileSize = 0;
-	char *blockBuffer = NULL;
+	short *blockBuffer = NULL;
 
 	fp = fopen(fileName.c_str(), "r");
 	if (!fp)
@@ -28,7 +28,7 @@ void FileParser::parseFile(Queue *q, std::string fileName) {
 	blocksNeeded = fileSize / MAX_BLOCK_SIZE;
 
 	for (int i = 0; i < blocksNeeded; i++) {
-		blockBuffer = (char *) malloc(sizeof(char) * MAX_BLOCK_SIZE);
+		blockBuffer = (short *) malloc(sizeof(char) * MAX_BLOCK_SIZE);
 		//if it is the last block to read(can be smaller then 1024
 		if(i == blocksNeeded-1) currSize = fileSize%MAX_BLOCK_SIZE;
 		else currSize = MAX_BLOCK_SIZE;
@@ -37,7 +37,7 @@ void FileParser::parseFile(Queue *q, std::string fileName) {
 					std::cout << "parseFile(): failed to fread" << std::endl, exit(1);
 
 		Block nb(i, blockBuffer, currSize);
-		q->addBlock(&nb);
+		q->put(&nb);
 	}
 
 	fclose(fp);

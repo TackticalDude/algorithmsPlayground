@@ -7,14 +7,18 @@
 
 #include "Block.h"
 
-Block::Block(int ID, char* datachunk, int size) {
+Block::Block(int ID, short* datachunk, int size) {
 	_ID = ID;
 	_dataChunk = datachunk;
 	_size = size;
 }
 
-char *Block::getDataChunk(){
+short *Block::getDataChunk(){
 	return _dataChunk;
+}
+
+int Block::getSize(){
+	return _size;
 }
 
 Block::~Block() {

@@ -10,11 +10,19 @@
 Queue::Queue() {
 
 }
-
-void Queue::addBlock(Block *toAdd){
+/**
+ * @name put
+ * @param toAdd - block to add
+ * @brief adds block to end of queue
+ */
+void Queue::put(Block *toAdd){
 	_blockQueue.push_back(toAdd);
 }
 
+/**
+ * @name emptyQueue
+ * @brief clears the queue
+ */
 void Queue::emptyQueue(){
 	_blockQueue.clear();
 }
@@ -30,7 +38,7 @@ void Queue::writeToFile(std::string outFile){
 	if(fp==NULL) std::cout << "writeToFile(): failed to open file" << std::endl, exit(1);
 
 	for (std::vector<Block *>::iterator it = _blockQueue.begin() ; it != _blockQueue.end(); ++it){
-		fwrite((*it)->getDataChunk(), sizeof(char), 1024, fp);
+		fwrite((*it)->getDataChunk(), sizeof(short), 1024, fp);
 	}
 
 	fclose(fp);

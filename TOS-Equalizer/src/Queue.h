@@ -17,10 +17,11 @@ private:
 	std::vector<Block *> _blockQueue;
 public:
 	Queue();
-	void addBlock(Block *toAdd);
+	void put(Block *toAdd);
 	void emptyQueue();
 	int getQueueSize();
 	void writeToFile(std::string outFile);
+	Block *get();
 	virtual ~Queue();
 };
 
