@@ -9,6 +9,8 @@
 #define FILEPARSER_H_
 
 #include "Queue.h"
+#include "allocation.h"
+#include <stdlib.h>
 #include <string>
 #include <iostream>
 #include <fstream>

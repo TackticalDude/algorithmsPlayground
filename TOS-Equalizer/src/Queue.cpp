@@ -27,21 +27,30 @@ void Queue::emptyQueue(){
 	_blockQueue.clear();
 }
 
+/**
+ * @name getQueueSize
+ * @return int - size of queue on a given moment
+ */
 int Queue::getQueueSize(){
 	return _blockQueue.size();
 }
 
+/**
+ * @name writeToFile
+ * @param string outfile
+ */
 void Queue::writeToFile(std::string outFile){
-	FILE *fp;
-	fp = fopen(outFile.c_str(), "w+");
-
-	if(fp==NULL) std::cout << "writeToFile(): failed to open file" << std::endl, exit(1);
-
+	std::ofstream out(outFile, std::ofstream::binary);
 	for (std::vector<Block *>::iterator it = _blockQueue.begin() ; it != _blockQueue.end(); ++it){
-		fwrite((*it)->getDataChunk(), sizeof(short), 1024, fp);
+		out.write((char *)(*it)->getDataChunk(), ((*it)->getSize())*2);
+		std::vector<Block *>::iterator ittemp = it + 1;
+		std::cout << (*it)->getDataChunk() << std::endl;
 	}
+	out.close();
+}
 
-	fclose(fp);
+Block *Queue::at(unsigned int n){
+	return _blockQueue.at(n);
 }
 
 Queue::~Queue() {

@@ -11,6 +11,7 @@
 #include "Block.h"
 #include <iostream>
 #include <vector>
+#include <fstream>
 
 class Queue {
 private:
@@ -22,6 +23,7 @@ public:
 	int getQueueSize();
 	void writeToFile(std::string outFile);
 	Block *get();
+	Block *at(unsigned int n);
 	virtual ~Queue();
 };
 

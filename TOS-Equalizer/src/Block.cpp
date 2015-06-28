@@ -9,7 +9,8 @@
 
 Block::Block(int ID, short* datachunk, int size) {
 	_ID = ID;
-	_dataChunk = datachunk;
+	//std::copy(datachunk, datachunk+size, _dataChunk);
+	memcpy(_dataChunk, datachunk, sizeof(short)*size);
 	_size = size;
 }
 
@@ -21,7 +22,7 @@ int Block::getSize(){
 	return _size;
 }
 
-Block::~Block() {
-	free(_dataChunk);
-}
+//Block::~Block() {
+//	free(_dataChunk);
+//}
 

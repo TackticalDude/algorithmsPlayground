@@ -10,17 +10,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <algorithm>
 
 class Block {
 private:
 	int _ID;
-	short* _dataChunk;
+	short _dataChunk[1024];
 	int _size;
 public:
 	Block(int ID, short* datachunk, int size);
 	short *getDataChunk();
 	int getSize();
-	virtual ~Block();
 };
 
 #endif /* BLOCK_H_ */

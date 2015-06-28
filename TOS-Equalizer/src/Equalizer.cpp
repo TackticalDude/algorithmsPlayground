@@ -16,11 +16,19 @@ int main(int argc, char *argv[]) {
  * @brief start of the entier program.
  */
 Equalizer::Equalizer(int argc, char *argv[]) {
+	_blockCnt = 0;
 	_commandHandler.handleStartCommands(argc, argv);
 	_fileParser.parseFile(&_blockQueue, _commandHandler.getInputFileName());
 	std::cout << "Parsed file into " << _blockQueue.getQueueSize() << " blocks."
 			<< std::endl;
-
+	calculateBiquad();
+	/*for(int i=0;i<_blockQueue.getQueueSize();i++){
+		equalizeBass();
+	}
+	_blockCnt = 0;
+	for(int i=0;i<_blockQueue.getQueueSize();i++){
+		equalizeTreble();
+	}*/
 	writeOut();
 }
 
@@ -30,7 +38,8 @@ Equalizer::Equalizer(int argc, char *argv[]) {
  */
 void Equalizer::writeOut() {
 	_blockQueue.writeToFile(_commandHandler.getOutputFileName());
-	std::cout << "Data exported to file : " << _commandHandler.getOutputFileName() << std::endl;
+	std::cout << "Data exported to file : "
+			<< _commandHandler.getOutputFileName() << std::endl;
 }
 
 /**
@@ -39,8 +48,8 @@ void Equalizer::writeOut() {
  */
 void Equalizer::equalize() {
 	for (int i = 0; i < _commandHandler.getThreadAmount(); i++) {
-		//std::thread t(equalizeBass);
-		//t.join();
+//		std::thread t(equalizeBass);
+//		t.join();
 	}
 }
 
@@ -67,11 +76,15 @@ void Equalizer::equalizeBass() {
 	if (bl == NULL) /*sleep*/
 		;
 
-	for (int n = 2; n < bl->getSize(); n++) {
+	for (int n = 0; n < bl->getSize(); n++) {
 		short *yBuffer = (short *) malloc(sizeof(short) * blockSize);
 		short *xBuffer = bl->getDataChunk();
 
-		yBuffer[n - 2] = bass.b0 * xBuffer[n] + bass.b1 * xBuffer[n - 1] + bass.b2 * xBuffer[n - 2] + bass.a1 * yBuffer[n - 1] + bass.a2 * yBuffer[n - 2];
+		yBuffer[n] = bass.b0 * xBuffer[n]
+				+ bass.b1 * (n - 1 > 0 ? xBuffer[n - 1] : 0)	//protection against negative indexes
+				+ bass.b2 * (n - 2 > 0 ? xBuffer[n - 2] : 0)
+				+ bass.a1 * (n - 1 > 0 ? yBuffer[n - 1] : 0)
+				+ bass.a2 * (n - 2 > 0 ? yBuffer[n - 2] : 0);
 	}
 }
 
@@ -83,18 +96,23 @@ void Equalizer::equalizeTreble() {
 	Block *bl = requestBlock();
 	int blockSize = bl->getSize();
 
-	if (bl == NULL) /*sleep*/;
+	if (bl == NULL) /*sleep*/
+		;
 
-	for (int n = 2; n < bl->getSize(); n++) {
+	for (int n = 0; n < bl->getSize(); n++) {
 		short *yBuffer = (short *) malloc(sizeof(short) * blockSize);
 		short *xBuffer = bl->getDataChunk();
 
-		yBuffer[n - 2] = bass.b0 * xBuffer[n] + bass.b1 * xBuffer[n - 1] + bass.b2 * xBuffer[n - 2] + bass.a1 * yBuffer[n - 1] + bass.a2 * yBuffer[n - 2];
+		yBuffer[n] = bass.b0 * xBuffer[n]
+				+ bass.b1 * (n - 1 > 0 ? xBuffer[n - 1] : 0)	//protection against negative indexes
+				+ bass.b2 * (n - 2 > 0 ? xBuffer[n - 2] : 0)
+				+ bass.a1 * (n - 1 > 0 ? yBuffer[n - 1] : 0)
+				+ bass.a2 * (n - 2 > 0 ? yBuffer[n - 2] : 0);
 	}
 }
 
 Block *Equalizer::requestBlock() {
-
+	return _blockQueue.at(_blockCnt++);
 }
 
 Equalizer::~Equalizer() {

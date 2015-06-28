@@ -72,10 +72,13 @@ bool CommandHandler::commandCheck() {
 		std::cout << "treble intensity must be between -6 and 6" << std::endl;
 		return false;
 	}
+
 	std::ifstream ifs(inputFileName.c_str(), std::ifstream::in);
 	if (!ifs.is_open()) {
 		std::cout << "input file not found" << std::endl;
 		return false;
+	}else{
+		std::cout << "input file : " << inputFileName << std::endl;
 	}
 	ifs.close();
 
@@ -83,6 +86,9 @@ bool CommandHandler::commandCheck() {
 	if (!ofs.is_open()) {
 		std::cout << "output file not found" << std::endl;
 		return false;
+	}
+	else{
+		std::cout << "output file : " << outputFileName << std::endl;
 	}
 	ifs.close();
 

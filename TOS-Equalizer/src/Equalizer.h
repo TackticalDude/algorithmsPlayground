@@ -22,9 +22,11 @@ class Equalizer{
 private:
 	biquad bass;
 	biquad treble;
+	unsigned int _blockCnt;
 public:
 	CommandHandler _commandHandler;
 	Queue _blockQueue;
+	Queue _tempQueue;
 	Queue _endQueue;
 	FileParser _fileParser;
 
