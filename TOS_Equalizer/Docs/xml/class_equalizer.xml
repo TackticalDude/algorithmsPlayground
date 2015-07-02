@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_equalizer" kind="class" language="C++" prot="public">
+    <compoundname>Equalizer</compoundname>
+    <includes refid="_equalizer_8h" local="no">Equalizer.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constuctor</header>
+      <description><para><simplesect kind="author"><para>Zakaria el Barnoussi (TackticalDude) </para></simplesect>
+<simplesect kind="version"><para>0.1</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <ref refid="class_queue" kindref="compound">Queue</ref> object pointer to request Blocks from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <ref refid="class_queue" kindref="compound">Queue</ref> object pointer to write <ref refid="class_block" kindref="compound">Block</ref> to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>treble</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- biquad structure which contains the b0,b1,b2,a1 and a2 values for the treble </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- biquad structure which contains the b0,b1,b2,a1 and a2 values for the bass </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_equalizer_1a770a24677f9b98e5af20c88b0e4065d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Equalizer::Equalizer</definition>
+        <argsstring>(Queue *form, Queue *to, biquad_t treble, biquad_t bass)</argsstring>
+        <name>Equalizer</name>
+        <param>
+          <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="structbiquad__t" kindref="compound">biquad_t</ref></type>
+          <declname>treble</declname>
+        </param>
+        <param>
+          <type><ref refid="structbiquad__t" kindref="compound">biquad_t</ref></type>
+          <declname>bass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="34" column="1" bodyfile="src/Equalizer.cpp" bodystart="16" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Constructor</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <ref refid="class_queue" kindref="compound">Queue</ref> object pointer to request Blocks from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <ref refid="class_queue" kindref="compound">Queue</ref> object pointer to write <ref refid="class_block" kindref="compound">Block</ref> to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>treble</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- biquad structure which contains the b0,b1,b2,a1 and a2 values for the treble </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- biquad structure which contains the b0,b1,b2,a1 and a2 values for the bass </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- string name for the object (for debug things) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_equalizer_1a13e7b4207a420baf5b3dceedd0401b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Equalizer::Equalizer</definition>
+        <argsstring>(Queue *form, Queue *to, biquad_t treble, biquad_t bass, std::string name)</argsstring>
+        <name>Equalizer</name>
+        <param>
+          <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+          <declname>form</declname>
+        </param>
+        <param>
+          <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="structbiquad__t" kindref="compound">biquad_t</ref></type>
+          <declname>treble</declname>
+        </param>
+        <param>
+          <type><ref refid="structbiquad__t" kindref="compound">biquad_t</ref></type>
+          <declname>bass</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="35" column="1" bodyfile="src/Equalizer.cpp" bodystart="37" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>stop</header>
+      <description><para>makes the thread stop running. </para></description>
+      <memberdef kind="function" id="class_equalizer_1a69c32b4a7bd82c63fa43002c7b91894a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equalizer::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="36" column="1" bodyfile="src/Equalizer.cpp" bodystart="58" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equalizer_1a770c223f70dbff27e5735cb04121dae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Equalizer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="37" column="1" bodyfile="src/Equalizer.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Deconstructor</header>
+      <description><para>joins the main thread to make sure the threads is stopped propperly </para></description>
+      <memberdef kind="function" id="class_equalizer_1a3467b7d27117adad2b78ddb92ea86df9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Equalizer::~Equalizer</definition>
+        <argsstring>()</argsstring>
+        <name>~Equalizer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="38" column="1" bodyfile="src/Equalizer.cpp" bodystart="96" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_equalizer_1a9fbd9865e4a9d66ee8aa887902e627f7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+        <definition>Queue* Equalizer::_from</definition>
+        <argsstring></argsstring>
+        <name>_from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="24" column="1" bodyfile="src/Equalizer.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_equalizer_1ad9f9233ea6df7fcfbc6824a6b33e8789" prot="private" static="no" mutable="no">
+        <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+        <definition>Queue* Equalizer::_to</definition>
+        <argsstring></argsstring>
+        <name>_to</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="25" column="1" bodyfile="src/Equalizer.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_equalizer_1ab2101710d28d9893b474424a198c1776" prot="private" static="no" mutable="no">
+        <type><ref refid="structbiquad__t" kindref="compound">biquad_t</ref></type>
+        <definition>biquad_t Equalizer::_treble</definition>
+        <argsstring></argsstring>
+        <name>_treble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="26" column="1" bodyfile="src/Equalizer.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_equalizer_1ad8f99201f3fc569e6149e968c887167b" prot="private" static="no" mutable="no">
+        <type><ref refid="structbiquad__t" kindref="compound">biquad_t</ref></type>
+        <definition>biquad_t Equalizer::_bass</definition>
+        <argsstring></argsstring>
+        <name>_bass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="27" column="1" bodyfile="src/Equalizer.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_equalizer_1ae8da5e4e3d92a668476af0124df7fcbc" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread Equalizer::_objThread</definition>
+        <argsstring></argsstring>
+        <name>_objThread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="29" column="1" bodyfile="src/Equalizer.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_equalizer_1a1a0fdb9a9078ff8fb7ced3a21bcf78d2" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Equalizer::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="30" column="1" bodyfile="src/Equalizer.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_equalizer_1aa09ac3d533d524543c00e9e19d35a56d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Equalizer::finished</definition>
+        <argsstring></argsstring>
+        <name>finished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Equalizer.h" line="32" column="1" bodyfile="src/Equalizer.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Makes a thread to recalculate blocks. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Equalizer.h" line="22" column="1" bodyfile="src/Equalizer.h" bodystart="22" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_equalizer_1ad8f99201f3fc569e6149e968c887167b" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>_bass</name></member>
+      <member refid="class_equalizer_1a9fbd9865e4a9d66ee8aa887902e627f7" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>_from</name></member>
+      <member refid="class_equalizer_1a1a0fdb9a9078ff8fb7ced3a21bcf78d2" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>_name</name></member>
+      <member refid="class_equalizer_1ae8da5e4e3d92a668476af0124df7fcbc" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>_objThread</name></member>
+      <member refid="class_equalizer_1ad9f9233ea6df7fcfbc6824a6b33e8789" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>_to</name></member>
+      <member refid="class_equalizer_1ab2101710d28d9893b474424a198c1776" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>_treble</name></member>
+      <member refid="class_equalizer_1a770a24677f9b98e5af20c88b0e4065d6" prot="public" virt="non-virtual"><scope>Equalizer</scope><name>Equalizer</name></member>
+      <member refid="class_equalizer_1a13e7b4207a420baf5b3dceedd0401b7e" prot="public" virt="non-virtual"><scope>Equalizer</scope><name>Equalizer</name></member>
+      <member refid="class_equalizer_1aa09ac3d533d524543c00e9e19d35a56d" prot="private" virt="non-virtual"><scope>Equalizer</scope><name>finished</name></member>
+      <member refid="class_equalizer_1a69c32b4a7bd82c63fa43002c7b91894a" prot="public" virt="non-virtual"><scope>Equalizer</scope><name>run</name></member>
+      <member refid="class_equalizer_1a770c223f70dbff27e5735cb04121dae7" prot="public" virt="non-virtual"><scope>Equalizer</scope><name>stop</name></member>
+      <member refid="class_equalizer_1a3467b7d27117adad2b78ddb92ea86df9" prot="public" virt="non-virtual"><scope>Equalizer</scope><name>~Equalizer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

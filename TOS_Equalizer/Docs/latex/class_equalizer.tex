@@ -1,0 +1,82 @@
+\hypertarget{class_equalizer}{}\section{Equalizer Class Reference}
+\label{class_equalizer}\index{Equalizer@{Equalizer}}
+
+
+Makes a thread to recalculate blocks.  
+
+
+
+
+{\ttfamily \#include $<$Equalizer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constuctor}\par
+{\em \begin{DoxyAuthor}{Author}
+Zakaria el Barnoussi (Tacktical\+Dude) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1
+\end{DoxyVersion}
+
+\begin{DoxyParams}{Parameters}
+{\em from} & -\/ \hyperlink{class_queue}{Queue} object pointer to request Blocks from \\
+\hline
+{\em to} & -\/ \hyperlink{class_queue}{Queue} object pointer to write \hyperlink{class_block}{Block} to \\
+\hline
+{\em treble} & -\/ biquad structure which contains the b0,b1,b2,a1 and a2 values for the treble \\
+\hline
+{\em bass} & -\/ biquad structure which contains the b0,b1,b2,a1 and a2 values for the bass \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_equalizer_a770a24677f9b98e5af20c88b0e4065d6}{}{\bfseries Equalizer} (\hyperlink{class_queue}{Queue} $\ast$form, \hyperlink{class_queue}{Queue} $\ast$to, \hyperlink{structbiquad__t}{biquad\+\_\+t} treble, \hyperlink{structbiquad__t}{biquad\+\_\+t} bass)\label{class_equalizer_a770a24677f9b98e5af20c88b0e4065d6}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Constructor}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em from} & -\/ \hyperlink{class_queue}{Queue} object pointer to request Blocks from \\
+\hline
+{\em to} & -\/ \hyperlink{class_queue}{Queue} object pointer to write \hyperlink{class_block}{Block} to \\
+\hline
+{\em treble} & -\/ biquad structure which contains the b0,b1,b2,a1 and a2 values for the treble \\
+\hline
+{\em bass} & -\/ biquad structure which contains the b0,b1,b2,a1 and a2 values for the bass \\
+\hline
+{\em name} & -\/ string name for the object (for debug things) \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_equalizer_a13e7b4207a420baf5b3dceedd0401b7e}{}{\bfseries Equalizer} (\hyperlink{class_queue}{Queue} $\ast$form, \hyperlink{class_queue}{Queue} $\ast$to, \hyperlink{structbiquad__t}{biquad\+\_\+t} treble, \hyperlink{structbiquad__t}{biquad\+\_\+t} bass, std\+::string name)\label{class_equalizer_a13e7b4207a420baf5b3dceedd0401b7e}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf stop}\par
+{\em makes the thread stop running. }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_equalizer_a69c32b4a7bd82c63fa43002c7b91894a}{}void {\bfseries run} ()\label{class_equalizer_a69c32b4a7bd82c63fa43002c7b91894a}
+
+\item 
+\hypertarget{class_equalizer_a770c223f70dbff27e5735cb04121dae7}{}void {\bfseries stop} ()\label{class_equalizer_a770c223f70dbff27e5735cb04121dae7}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Deconstructor}\par
+{\em joins the main thread to make sure the threads is stopped propperly }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_equalizer_a3467b7d27117adad2b78ddb92ea86df9}{}{\bfseries $\sim$\+Equalizer} ()\label{class_equalizer_a3467b7d27117adad2b78ddb92ea86df9}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Makes a thread to recalculate blocks. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Equalizer.\+h\item 
+src/Equalizer.\+cpp\end{DoxyCompactItemize}

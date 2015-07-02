@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_command_handler" kind="class" language="C++" prot="public">
+    <compoundname>CommandHandler</compoundname>
+    <includes refid="_command_handler_8h" local="no">CommandHandler.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructor</header>
+      <memberdef kind="function" id="class_command_handler_1a9a98482665c0a42277473c2b489ea4cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CommandHandler::CommandHandler</definition>
+        <argsstring>()</argsstring>
+        <name>CommandHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="30" column="1" bodyfile="src/CommandHandler.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>handleStartCommands</header>
+      <description><para>parses parameters</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- argument count </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- argument array </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 when completed </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1a74b569145388ba0274c2ce1d07a0bfa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CommandHandler::handleStartCommands</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>handleStartCommands</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="31" column="1" bodyfile="src/CommandHandler.cpp" bodystart="23" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>commandCheck</header>
+      <description><para>checks wheter commands are valid</para><para><simplesect kind="return"><para>true when commands are valid, falsewhen commands are invalid </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1a3411c0c04dd7740b0d18fbf7b59fa669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CommandHandler::commandCheck</definition>
+        <argsstring>()</argsstring>
+        <name>commandCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="37" column="1" bodyfile="src/CommandHandler.cpp" bodystart="76" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getInputFileName</header>
+      <description><para><simplesect kind="return"><para>string - file name of the input file </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1acb568f7f04504318e5f548385ec1be9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CommandHandler::getInputFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getInputFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="32" column="1" bodyfile="src/CommandHandler.cpp" bodystart="116" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getOutputFileName</header>
+      <description><para><simplesect kind="return"><para>string - file name of the output file </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1a9b9d78063e8a2549c8dfeb1576346545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string CommandHandler::getOutputFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getOutputFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="33" column="1" bodyfile="src/CommandHandler.cpp" bodystart="124" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getThreadAmount</header>
+      <description><para><simplesect kind="return"><para>amount of threads given in the argument list, -p </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1a9c50eace565ec24bd313ad39857e626d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CommandHandler::getThreadAmount</definition>
+        <argsstring>()</argsstring>
+        <name>getThreadAmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="34" column="1" bodyfile="src/CommandHandler.cpp" bodystart="132" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getBassIntensity</header>
+      <description><para><simplesect kind="return"><para>intensity of the bass given in the argument list -b </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1aff3405603f10b5f96619e86b741bad19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CommandHandler::getBassIntensity</definition>
+        <argsstring>()</argsstring>
+        <name>getBassIntensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="35" column="1" bodyfile="src/CommandHandler.cpp" bodystart="140" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getTrebleIntensity</header>
+      <description><para><simplesect kind="return"><para>intensity of the treble given in the argument list -t </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_command_handler_1aa52e40a561ad8ba0a72772cbf4993d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CommandHandler::getTrebleIntensity</definition>
+        <argsstring>()</argsstring>
+        <name>getTrebleIntensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="36" column="1" bodyfile="src/CommandHandler.cpp" bodystart="148" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_command_handler_1abd9e1fb141c325a79c8d446556ae5fb3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CommandHandler::pValue</definition>
+        <argsstring></argsstring>
+        <name>pValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="24" column="1" bodyfile="src/CommandHandler.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_handler_1a2cac854efb90ff07d8c31df72377ab8a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CommandHandler::bValue</definition>
+        <argsstring></argsstring>
+        <name>bValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="25" column="1" bodyfile="src/CommandHandler.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_handler_1a55b134727d614634251a8b7d5abd26f8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CommandHandler::tValue</definition>
+        <argsstring></argsstring>
+        <name>tValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="26" column="1" bodyfile="src/CommandHandler.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_handler_1a9c17290c800b9c13b0caf60e6ec23917" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CommandHandler::inputFileName</definition>
+        <argsstring></argsstring>
+        <name>inputFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="27" column="1" bodyfile="src/CommandHandler.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_handler_1ad4cb6a521501fb35c3c768ac53928cd6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CommandHandler::outputFileName</definition>
+        <argsstring></argsstring>
+        <name>outputFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/CommandHandler.h" line="28" column="1" bodyfile="src/CommandHandler.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>used to parse the arguments when started this program </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Zakaria el Barnoussi (TackticalDude) </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="src/CommandHandler.h" line="22" column="1" bodyfile="src/CommandHandler.h" bodystart="22" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_command_handler_1a2cac854efb90ff07d8c31df72377ab8a" prot="private" virt="non-virtual"><scope>CommandHandler</scope><name>bValue</name></member>
+      <member refid="class_command_handler_1a3411c0c04dd7740b0d18fbf7b59fa669" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>commandCheck</name></member>
+      <member refid="class_command_handler_1a9a98482665c0a42277473c2b489ea4cb" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>CommandHandler</name></member>
+      <member refid="class_command_handler_1aff3405603f10b5f96619e86b741bad19" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>getBassIntensity</name></member>
+      <member refid="class_command_handler_1acb568f7f04504318e5f548385ec1be9f" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>getInputFileName</name></member>
+      <member refid="class_command_handler_1a9b9d78063e8a2549c8dfeb1576346545" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>getOutputFileName</name></member>
+      <member refid="class_command_handler_1a9c50eace565ec24bd313ad39857e626d" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>getThreadAmount</name></member>
+      <member refid="class_command_handler_1aa52e40a561ad8ba0a72772cbf4993d5e" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>getTrebleIntensity</name></member>
+      <member refid="class_command_handler_1a74b569145388ba0274c2ce1d07a0bfa3" prot="public" virt="non-virtual"><scope>CommandHandler</scope><name>handleStartCommands</name></member>
+      <member refid="class_command_handler_1a9c17290c800b9c13b0caf60e6ec23917" prot="private" virt="non-virtual"><scope>CommandHandler</scope><name>inputFileName</name></member>
+      <member refid="class_command_handler_1ad4cb6a521501fb35c3c768ac53928cd6" prot="private" virt="non-virtual"><scope>CommandHandler</scope><name>outputFileName</name></member>
+      <member refid="class_command_handler_1abd9e1fb141c325a79c8d446556ae5fb3" prot="private" virt="non-virtual"><scope>CommandHandler</scope><name>pValue</name></member>
+      <member refid="class_command_handler_1a55b134727d614634251a8b7d5abd26f8" prot="private" virt="non-virtual"><scope>CommandHandler</scope><name>tValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

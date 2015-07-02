@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_coefficient" kind="class" language="C++" prot="public">
+    <compoundname>Coefficient</compoundname>
+    <includes refid="_coefficient_8h" local="no">Coefficient.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructor</header>
+      <memberdef kind="function" id="class_coefficient_1ab83c013ead131fc0586a7511041d4ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Coefficient::Coefficient</definition>
+        <argsstring>()</argsstring>
+        <name>Coefficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="32" column="1" bodyfile="src/Coefficient.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>bassCoffiecient</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- intensity of the bass </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place b0 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place b1 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place b2 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place a1 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place a2 in </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_coefficient_1ae55b7da404f034e4a7d89157a4d3f139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coefficient::bassCoeffiecient</definition>
+        <argsstring>(int intensity, double *b0, double *b1, double *b2, double *a1, double *a2)</argsstring>
+        <name>bassCoeffiecient</name>
+        <param>
+          <type>int</type>
+          <declname>intensity</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>b0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>b2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="33" column="1" bodyfile="src/Coefficient.cpp" bodystart="26" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>trebleCoefficient</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- intensity of the treble </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place b0 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place b1 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place b2 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place a1 in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to double to place a2 in </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_coefficient_1ac023f6647805b6b3f06ea7bc7218095b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Coefficient::trebleCoefficient</definition>
+        <argsstring>(int intensity, double *b0, double *b1, double *b2, double *a1, double *a2)</argsstring>
+        <name>trebleCoefficient</name>
+        <param>
+          <type>int</type>
+          <declname>intensity</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>b0</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>b2</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="34" column="1" bodyfile="src/Coefficient.cpp" bodystart="54" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Deconstructor</header>
+      <memberdef kind="function" id="class_coefficient_1a38715b066508158c7b6f82490d636665" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Coefficient::~Coefficient</definition>
+        <argsstring>()</argsstring>
+        <name>~Coefficient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="35" column="1" bodyfile="src/Coefficient.cpp" bodystart="77" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>can calculate the coefficients needed to adjust treble and bass </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Zakaria el Barnoussi (TackticalDude) </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para>    </detaileddescription>
+    <location file="src/Coefficient.h" line="30" column="1" bodyfile="src/Coefficient.h" bodystart="30" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_coefficient_1ae55b7da404f034e4a7d89157a4d3f139" prot="public" virt="non-virtual"><scope>Coefficient</scope><name>bassCoeffiecient</name></member>
+      <member refid="class_coefficient_1ab83c013ead131fc0586a7511041d4ee6" prot="public" virt="non-virtual"><scope>Coefficient</scope><name>Coefficient</name></member>
+      <member refid="class_coefficient_1ac023f6647805b6b3f06ea7bc7218095b" prot="public" virt="non-virtual"><scope>Coefficient</scope><name>trebleCoefficient</name></member>
+      <member refid="class_coefficient_1a38715b066508158c7b6f82490d636665" prot="public" virt="virtual"><scope>Coefficient</scope><name>~Coefficient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

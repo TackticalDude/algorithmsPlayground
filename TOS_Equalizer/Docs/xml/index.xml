@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.10">
+  <compound refid="structbiquad__t" kind="struct"><name>biquad_t</name>
+    <member refid="structbiquad__t_1a1ce93a5333970082203532c9ffdf5828" kind="variable"><name>b0</name></member>
+    <member refid="structbiquad__t_1a3f8e82acc26d35a1563b4bbead340141" kind="variable"><name>b1</name></member>
+    <member refid="structbiquad__t_1aeb9211d4485eca4e49caceb95e168fb2" kind="variable"><name>b2</name></member>
+    <member refid="structbiquad__t_1a9ce3c9940d0f31b183705881e06c6382" kind="variable"><name>a1</name></member>
+    <member refid="structbiquad__t_1a1cf4a4cf8a065f8eea2f5e1699946cb4" kind="variable"><name>a2</name></member>
+  </compound>
+  <compound refid="class_block" kind="class"><name>Block</name>
+    <member refid="class_block_1aa7b1042ffcbf685cf3c7c0feb61bf3c7" kind="function"><name>Block</name></member>
+    <member refid="class_block_1ad242e61da6aec1d9ffea5cdf0ad57a07" kind="function"><name>getDataChunk</name></member>
+    <member refid="class_block_1a5da1ca635535bebecb9bbb075453bda1" kind="function"><name>getSize</name></member>
+    <member refid="class_block_1a2ef86a85c550acbfaaa39997079ffa1f" kind="function"><name>getID</name></member>
+    <member refid="class_block_1a19d1bd0e1cef6a865ed2745a2e648405" kind="function"><name>~Block</name></member>
+    <member refid="class_block_1a2147177d8a203b3b7194878406a0e0c2" kind="variable"><name>_ID</name></member>
+    <member refid="class_block_1a50a93175c0c31e9a705a7c49ff29ec3c" kind="variable"><name>_dataChunk</name></member>
+    <member refid="class_block_1a05fb0635ecd1e5b7b8ad66b4dc2bdc50" kind="variable"><name>_size</name></member>
+  </compound>
+  <compound refid="class_coefficient" kind="class"><name>Coefficient</name>
+    <member refid="class_coefficient_1ab83c013ead131fc0586a7511041d4ee6" kind="function"><name>Coefficient</name></member>
+    <member refid="class_coefficient_1ae55b7da404f034e4a7d89157a4d3f139" kind="function"><name>bassCoeffiecient</name></member>
+    <member refid="class_coefficient_1ac023f6647805b6b3f06ea7bc7218095b" kind="function"><name>trebleCoefficient</name></member>
+    <member refid="class_coefficient_1a38715b066508158c7b6f82490d636665" kind="function"><name>~Coefficient</name></member>
+  </compound>
+  <compound refid="class_command_handler" kind="class"><name>CommandHandler</name>
+    <member refid="class_command_handler_1a9a98482665c0a42277473c2b489ea4cb" kind="function"><name>CommandHandler</name></member>
+    <member refid="class_command_handler_1a74b569145388ba0274c2ce1d07a0bfa3" kind="function"><name>handleStartCommands</name></member>
+    <member refid="class_command_handler_1a3411c0c04dd7740b0d18fbf7b59fa669" kind="function"><name>commandCheck</name></member>
+    <member refid="class_command_handler_1acb568f7f04504318e5f548385ec1be9f" kind="function"><name>getInputFileName</name></member>
+    <member refid="class_command_handler_1a9b9d78063e8a2549c8dfeb1576346545" kind="function"><name>getOutputFileName</name></member>
+    <member refid="class_command_handler_1a9c50eace565ec24bd313ad39857e626d" kind="function"><name>getThreadAmount</name></member>
+    <member refid="class_command_handler_1aff3405603f10b5f96619e86b741bad19" kind="function"><name>getBassIntensity</name></member>
+    <member refid="class_command_handler_1aa52e40a561ad8ba0a72772cbf4993d5e" kind="function"><name>getTrebleIntensity</name></member>
+    <member refid="class_command_handler_1abd9e1fb141c325a79c8d446556ae5fb3" kind="variable"><name>pValue</name></member>
+    <member refid="class_command_handler_1a2cac854efb90ff07d8c31df72377ab8a" kind="variable"><name>bValue</name></member>
+    <member refid="class_command_handler_1a55b134727d614634251a8b7d5abd26f8" kind="variable"><name>tValue</name></member>
+    <member refid="class_command_handler_1a9c17290c800b9c13b0caf60e6ec23917" kind="variable"><name>inputFileName</name></member>
+    <member refid="class_command_handler_1ad4cb6a521501fb35c3c768ac53928cd6" kind="variable"><name>outputFileName</name></member>
+  </compound>
+  <compound refid="class_equalizer" kind="class"><name>Equalizer</name>
+    <member refid="class_equalizer_1a770a24677f9b98e5af20c88b0e4065d6" kind="function"><name>Equalizer</name></member>
+    <member refid="class_equalizer_1a13e7b4207a420baf5b3dceedd0401b7e" kind="function"><name>Equalizer</name></member>
+    <member refid="class_equalizer_1a69c32b4a7bd82c63fa43002c7b91894a" kind="function"><name>run</name></member>
+    <member refid="class_equalizer_1a770c223f70dbff27e5735cb04121dae7" kind="function"><name>stop</name></member>
+    <member refid="class_equalizer_1a3467b7d27117adad2b78ddb92ea86df9" kind="function"><name>~Equalizer</name></member>
+    <member refid="class_equalizer_1a9fbd9865e4a9d66ee8aa887902e627f7" kind="variable"><name>_from</name></member>
+    <member refid="class_equalizer_1ad9f9233ea6df7fcfbc6824a6b33e8789" kind="variable"><name>_to</name></member>
+    <member refid="class_equalizer_1ab2101710d28d9893b474424a198c1776" kind="variable"><name>_treble</name></member>
+    <member refid="class_equalizer_1ad8f99201f3fc569e6149e968c887167b" kind="variable"><name>_bass</name></member>
+    <member refid="class_equalizer_1ae8da5e4e3d92a668476af0124df7fcbc" kind="variable"><name>_objThread</name></member>
+    <member refid="class_equalizer_1a1a0fdb9a9078ff8fb7ced3a21bcf78d2" kind="variable"><name>_name</name></member>
+    <member refid="class_equalizer_1aa09ac3d533d524543c00e9e19d35a56d" kind="variable"><name>finished</name></member>
+  </compound>
+  <compound refid="class_file_parser" kind="class"><name>FileParser</name>
+    <member refid="class_file_parser_1acb58172b4650cd8015d5e8cad7d29647" kind="function"><name>FileParser</name></member>
+    <member refid="class_file_parser_1a07eec02b89d7a3d0cf7e5ea699917df6" kind="function"><name>parseFile</name></member>
+    <member refid="class_file_parser_1a8b41aca52b30e9f357f50e76f3c9cc9d" kind="function"><name>~FileParser</name></member>
+  </compound>
+  <compound refid="class_queue" kind="class"><name>Queue</name>
+    <member refid="class_queue_1a7cfca3637d57c4a9e37351b3426ffd40" kind="function"><name>Queue</name></member>
+    <member refid="class_queue_1a33dbefb5e66c6702fb2c43356ee0c0ca" kind="function"><name>put</name></member>
+    <member refid="class_queue_1abcaf6e9785189306476e5981177bed4d" kind="function"><name>emptyQueue</name></member>
+    <member refid="class_queue_1a4b5d91535b1af232d64fc02a944725db" kind="function"><name>getQueueSize</name></member>
+    <member refid="class_queue_1a559caab2e1147a7f0a13eb7b093e0f5b" kind="function"><name>getBlockCount</name></member>
+    <member refid="class_queue_1a7aadc3ce796b95ba60b47361d9f97c85" kind="function"><name>writeToFile</name></member>
+    <member refid="class_queue_1a6f8d170c38f4c326dbc2074964b3373b" kind="function"><name>at</name></member>
+    <member refid="class_queue_1a394716099a2af0b27cf915905b8567c2" kind="function"><name>requestBlock</name></member>
+    <member refid="class_queue_1a65d9b23c23c917faa44981539bc34be7" kind="function"><name>isEmpty</name></member>
+    <member refid="class_queue_1a00d119db8fa3050da37746e82cbcf94f" kind="function"><name>~Queue</name></member>
+    <member refid="class_queue_1a5c368481a3bfc8bd0b77d7e652c9510e" kind="variable"><name>_blockCnt</name></member>
+    <member refid="class_queue_1a527f414250776495c6146fd73f83624f" kind="variable"><name>_size</name></member>
+    <member refid="class_queue_1a97316a89f0406a748afb4abb38cdd5a4" kind="variable"><name>_blockQueue</name></member>
+    <member refid="class_queue_1a295ff2248b4f1a1f193833a377850020" kind="variable"><name>_requestBlock</name></member>
+    <member refid="class_queue_1a2795cbd3cf36b3ce9604ea719fa10c73" kind="variable"><name>_putBlock</name></member>
+  </compound>
+  <compound refid="_block_8cpp" kind="file"><name>Block.cpp</name>
+  </compound>
+  <compound refid="_block_8h" kind="file"><name>Block.h</name>
+  </compound>
+  <compound refid="_coefficient_8cpp" kind="file"><name>Coefficient.cpp</name>
+  </compound>
+  <compound refid="_coefficient_8h" kind="file"><name>Coefficient.h</name>
+  </compound>
+  <compound refid="_command_handler_8cpp" kind="file"><name>CommandHandler.cpp</name>
+  </compound>
+  <compound refid="_command_handler_8h" kind="file"><name>CommandHandler.h</name>
+  </compound>
+  <compound refid="_equalizer_8cpp" kind="file"><name>Equalizer.cpp</name>
+  </compound>
+  <compound refid="_equalizer_8h" kind="file"><name>Equalizer.h</name>
+  </compound>
+  <compound refid="_file_parser_8cpp" kind="file"><name>FileParser.cpp</name>
+  </compound>
+  <compound refid="_file_parser_8h" kind="file"><name>FileParser.h</name>
+    <member refid="_file_parser_8h_1aa8bad2cd89820cdaf2a7f26392774014" kind="define"><name>MAX_BLOCK_SIZE</name></member>
+  </compound>
+  <compound refid="_queue_8cpp" kind="file"><name>Queue.cpp</name>
+  </compound>
+  <compound refid="_queue_8h" kind="file"><name>Queue.h</name>
+  </compound>
+  <compound refid="_t_o_s___equalizer_8cpp" kind="file"><name>TOS_Equalizer.cpp</name>
+    <member refid="_t_o_s___equalizer_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

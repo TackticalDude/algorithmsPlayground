@@ -1,0 +1,117 @@
+\hypertarget{class_command_handler}{}\section{Command\+Handler Class Reference}
+\label{class_command_handler}\index{Command\+Handler@{Command\+Handler}}
+
+
+used to parse the arguments when started this program  
+
+
+
+
+{\ttfamily \#include $<$Command\+Handler.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_a9a98482665c0a42277473c2b489ea4cb}{}{\bfseries Command\+Handler} ()\label{class_command_handler_a9a98482665c0a42277473c2b489ea4cb}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf handle\+Start\+Commands}\par
+{\em parses parameters
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & -\/ argument count \\
+\hline
+{\em argv} & -\/ argument array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when completed 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_a74b569145388ba0274c2ce1d07a0bfa3}{}int {\bfseries handle\+Start\+Commands} (int argc, char $\ast$$\ast$argv)\label{class_command_handler_a74b569145388ba0274c2ce1d07a0bfa3}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Input\+File\+Name}\par
+{\em \begin{DoxyReturn}{Returns}
+string -\/ file name of the input file 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_acb568f7f04504318e5f548385ec1be9f}{}std\+::string {\bfseries get\+Input\+File\+Name} ()\label{class_command_handler_acb568f7f04504318e5f548385ec1be9f}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Output\+File\+Name}\par
+{\em \begin{DoxyReturn}{Returns}
+string -\/ file name of the output file 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_a9b9d78063e8a2549c8dfeb1576346545}{}std\+::string {\bfseries get\+Output\+File\+Name} ()\label{class_command_handler_a9b9d78063e8a2549c8dfeb1576346545}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Thread\+Amount}\par
+{\em \begin{DoxyReturn}{Returns}
+amount of threads given in the argument list, -\/p 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_a9c50eace565ec24bd313ad39857e626d}{}int {\bfseries get\+Thread\+Amount} ()\label{class_command_handler_a9c50eace565ec24bd313ad39857e626d}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Bass\+Intensity}\par
+{\em \begin{DoxyReturn}{Returns}
+intensity of the bass given in the argument list -\/b 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_aff3405603f10b5f96619e86b741bad19}{}int {\bfseries get\+Bass\+Intensity} ()\label{class_command_handler_aff3405603f10b5f96619e86b741bad19}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Treble\+Intensity}\par
+{\em \begin{DoxyReturn}{Returns}
+intensity of the treble given in the argument list -\/t 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_aa52e40a561ad8ba0a72772cbf4993d5e}{}int {\bfseries get\+Treble\+Intensity} ()\label{class_command_handler_aa52e40a561ad8ba0a72772cbf4993d5e}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf command\+Check}\par
+{\em checks wheter commands are valid
+
+\begin{DoxyReturn}{Returns}
+true when commands are valid, falsewhen commands are invalid 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_command_handler_a3411c0c04dd7740b0d18fbf7b59fa669}{}bool {\bfseries command\+Check} ()\label{class_command_handler_a3411c0c04dd7740b0d18fbf7b59fa669}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+used to parse the arguments when started this program 
+
+\begin{DoxyAuthor}{Author}
+Zakaria el Barnoussi (Tacktical\+Dude) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Command\+Handler.\+h\item 
+src/Command\+Handler.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_coefficient_8h" kind="file" language="C++">
+    <compoundname>Coefficient.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includedby refid="_coefficient_8cpp" local="yes">src/Coefficient.cpp</includedby>
+    <includedby refid="_equalizer_8h" local="yes">src/Equalizer.h</includedby>
+    <includedby refid="_t_o_s___equalizer_8cpp" local="yes">src/TOS_Equalizer.cpp</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>src/Coefficient.h</label>
+        <link refid="Coefficient.h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="23">
+        <label>src/Equalizer.h</label>
+        <link refid="_equalizer_8h_source"/>
+      </node>
+      <node id="22">
+        <label>src/Coefficient.h</label>
+        <link refid="Coefficient.h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structbiquad__t" prot="public">biquad_t</innerclass>
+    <innerclass refid="class_coefficient" prot="public">Coefficient</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Coefficient.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Jun<sp/>25,<sp/>2015</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>TackticalDude</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COEFFICIENT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COEFFICIENT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structbiquad__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b0,<sp/>b1,<sp/>b2,<sp/>a1,<sp/>a2;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<ref refid="structbiquad__t" kindref="compound">biquad_t</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_coefficient" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_coefficient" kindref="compound">Coefficient</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coefficient" kindref="compound">Coefficient</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bassCoeffiecient(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intensity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*b0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*b1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*b2,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*a1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*a2);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trebleCoefficient(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intensity,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*b0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*b1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*b2,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*a1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*a2);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_coefficient" kindref="compound">Coefficient</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COEFFICIENT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="src/Coefficient.h"/>
+  </compounddef>
+</doxygen>

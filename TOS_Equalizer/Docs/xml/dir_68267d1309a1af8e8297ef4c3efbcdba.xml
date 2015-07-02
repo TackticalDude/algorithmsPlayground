@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="_block_8cpp">Block.cpp</innerfile>
+    <innerfile refid="_block_8h">Block.h</innerfile>
+    <innerfile refid="_coefficient_8cpp">Coefficient.cpp</innerfile>
+    <innerfile refid="_coefficient_8h">Coefficient.h</innerfile>
+    <innerfile refid="_command_handler_8cpp">CommandHandler.cpp</innerfile>
+    <innerfile refid="_command_handler_8h">CommandHandler.h</innerfile>
+    <innerfile refid="_equalizer_8cpp">Equalizer.cpp</innerfile>
+    <innerfile refid="_equalizer_8h">Equalizer.h</innerfile>
+    <innerfile refid="_file_parser_8cpp">FileParser.cpp</innerfile>
+    <innerfile refid="_file_parser_8h">FileParser.h</innerfile>
+    <innerfile refid="_queue_8cpp">Queue.cpp</innerfile>
+    <innerfile refid="_queue_8h">Queue.h</innerfile>
+    <innerfile refid="_t_o_s___equalizer_8cpp">TOS_Equalizer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

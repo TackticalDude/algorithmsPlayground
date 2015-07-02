@@ -1,0 +1,130 @@
+\hypertarget{class_queue}{}\section{Queue Class Reference}
+\label{class_queue}\index{Queue@{Queue}}
+
+
+contains a thread save block request function and \hyperlink{class_block}{Block} vector  
+
+
+
+
+{\ttfamily \#include $<$Queue.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{Indent}{\bf Constructor}\par
+{\em This class contains a array of blocks and counters to remember size and amount of blocks requested.
+
+\begin{DoxyAuthor}{Author}
+Zakaria el Barnoussi (Tacktical\+Dude)
+\end{DoxyAuthor}
+initializes block counter and size }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}{}{\bfseries Queue} ()\label{class_queue_a7cfca3637d57c4a9e37351b3426ffd40}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf request\+Block}\par
+{\em when a thread requests a block to process, this function returns a pointer to the block which should be processed
+
+\begin{DoxyReturn}{Returns}
+a block pointer 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a394716099a2af0b27cf915905b8567c2}{}\hyperlink{class_block}{Block} $\ast$ {\bfseries request\+Block} ()\label{class_queue_a394716099a2af0b27cf915905b8567c2}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf at}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em n} & -\/ element to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A block pointer which is on the n\textquotesingle{}th element of vector \+\_\+block\+Queue 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a6f8d170c38f4c326dbc2074964b3373b}{}\hyperlink{class_block}{Block} $\ast$ {\bfseries at} (unsigned int n)\label{class_queue_a6f8d170c38f4c326dbc2074964b3373b}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Queue\+Size}\par
+{\em \begin{DoxyReturn}{Returns}
+size of queue on a given moment 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a4b5d91535b1af232d64fc02a944725db}{}int {\bfseries get\+Queue\+Size} ()\label{class_queue_a4b5d91535b1af232d64fc02a944725db}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf get\+Block\+Count}\par
+{\em \begin{DoxyReturn}{Returns}
+the block counter value 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a559caab2e1147a7f0a13eb7b093e0f5b}{}int {\bfseries get\+Block\+Count} ()\label{class_queue_a559caab2e1147a7f0a13eb7b093e0f5b}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf is\+Empty}\par
+{\em \begin{DoxyReturn}{Returns}
+true when \+\_\+block\+Queue is empty, false when \+\_\+block\+Queue when not emtpy 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a65d9b23c23c917faa44981539bc34be7}{}bool {\bfseries is\+Empty} ()\label{class_queue_a65d9b23c23c917faa44981539bc34be7}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf put}\par
+{\em adds block to end of queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & -\/ block to add to the \+\_\+block\+Queue vector \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a33dbefb5e66c6702fb2c43356ee0c0ca}{}void {\bfseries put} (\hyperlink{class_block}{Block} $\ast$to\+Add)\label{class_queue_a33dbefb5e66c6702fb2c43356ee0c0ca}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf empty\+Queue}\par
+{\em clears the queue }\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_abcaf6e9785189306476e5981177bed4d}{}void {\bfseries empty\+Queue} ()\label{class_queue_abcaf6e9785189306476e5981177bed4d}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf write\+To\+File}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em string} & outfile \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a7aadc3ce796b95ba60b47361d9f97c85}{}void {\bfseries write\+To\+File} (std\+::string out\+File)\label{class_queue_a7aadc3ce796b95ba60b47361d9f97c85}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Deconstructor}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_queue_a00d119db8fa3050da37746e82cbcf94f}{}{\bfseries $\sim$\+Queue} ()\label{class_queue_a00d119db8fa3050da37746e82cbcf94f}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+contains a thread save block request function and \hyperlink{class_block}{Block} vector 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Queue.\+h\item 
+src/Queue.\+cpp\end{DoxyCompactItemize}

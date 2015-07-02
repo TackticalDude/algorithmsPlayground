@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_block" kind="class" language="C++" prot="public">
+    <compoundname>Block</compoundname>
+    <includes refid="_block_8h" local="no">Block.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructor</header>
+      <description><para><simplesect kind="author"><para>Zakaria el Barnoussi (TackticalDude) </para></simplesect>
+<simplesect kind="version"><para>0.1</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- id of the block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datachunk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- chunk of data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- size of the data chunk </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_block_1aa7b1042ffcbf685cf3c7c0feb61bf3c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Block::Block</definition>
+        <argsstring>(int ID, short *datachunk, int size)</argsstring>
+        <name>Block</name>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>short *</type>
+          <declname>datachunk</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="26" column="1" bodyfile="src/Block.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getDataChunk</header>
+      <description><para><simplesect kind="return"><para>the datachunk of the block object </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_block_1ad242e61da6aec1d9ffea5cdf0ad57a07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>short *</type>
+        <definition>short * Block::getDataChunk</definition>
+        <argsstring>()</argsstring>
+        <name>getDataChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="27" column="1" bodyfile="src/Block.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getSize</header>
+      <description><para><simplesect kind="return"><para>size of the block </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_block_1a5da1ca635535bebecb9bbb075453bda1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Block::getSize</definition>
+        <argsstring>()</argsstring>
+        <name>getSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="28" column="1" bodyfile="src/Block.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getID</header>
+      <description><para><simplesect kind="return"><para>id of the datachunk of the block </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_block_1a2ef86a85c550acbfaaa39997079ffa1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Block::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="29" column="1" bodyfile="src/Block.cpp" bodystart="41" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Deconstructor</header>
+      <memberdef kind="function" id="class_block_1a19d1bd0e1cef6a865ed2745a2e648405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Block::~Block</definition>
+        <argsstring>()</argsstring>
+        <name>~Block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="30" column="1" bodyfile="src/Block.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_block_1a2147177d8a203b3b7194878406a0e0c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Block::_ID</definition>
+        <argsstring></argsstring>
+        <name>_ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="22" column="1" bodyfile="src/Block.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_block_1a50a93175c0c31e9a705a7c49ff29ec3c" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short Block::_dataChunk[1024]</definition>
+        <argsstring>[1024]</argsstring>
+        <name>_dataChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="23" column="1" bodyfile="src/Block.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_block_1a05fb0635ecd1e5b7b8ad66b4dc2bdc50" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Block::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Block.h" line="24" column="1" bodyfile="src/Block.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a block with ID and size </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Block.h" line="20" column="1" bodyfile="src/Block.h" bodystart="20" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_block_1a50a93175c0c31e9a705a7c49ff29ec3c" prot="private" virt="non-virtual"><scope>Block</scope><name>_dataChunk</name></member>
+      <member refid="class_block_1a2147177d8a203b3b7194878406a0e0c2" prot="private" virt="non-virtual"><scope>Block</scope><name>_ID</name></member>
+      <member refid="class_block_1a05fb0635ecd1e5b7b8ad66b4dc2bdc50" prot="private" virt="non-virtual"><scope>Block</scope><name>_size</name></member>
+      <member refid="class_block_1aa7b1042ffcbf685cf3c7c0feb61bf3c7" prot="public" virt="non-virtual"><scope>Block</scope><name>Block</name></member>
+      <member refid="class_block_1ad242e61da6aec1d9ffea5cdf0ad57a07" prot="public" virt="non-virtual"><scope>Block</scope><name>getDataChunk</name></member>
+      <member refid="class_block_1a2ef86a85c550acbfaaa39997079ffa1f" prot="public" virt="non-virtual"><scope>Block</scope><name>getID</name></member>
+      <member refid="class_block_1a5da1ca635535bebecb9bbb075453bda1" prot="public" virt="non-virtual"><scope>Block</scope><name>getSize</name></member>
+      <member refid="class_block_1a19d1bd0e1cef6a865ed2745a2e648405" prot="public" virt="non-virtual"><scope>Block</scope><name>~Block</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

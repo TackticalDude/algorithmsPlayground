@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_queue" kind="class" language="C++" prot="public">
+    <compoundname>Queue</compoundname>
+    <includes refid="_queue_8h" local="no">Queue.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructor</header>
+      <description><para>This class contains a array of blocks and counters to remember size and amount of blocks requested.</para><para><simplesect kind="author"><para>Zakaria el Barnoussi (TackticalDude)</para></simplesect>
+initializes block counter and size </para></description>
+      <memberdef kind="function" id="class_queue_1a7cfca3637d57c4a9e37351b3426ffd40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Queue::Queue</definition>
+        <argsstring>()</argsstring>
+        <name>Queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="31" column="1" bodyfile="src/Queue.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>put</header>
+      <description><para>adds block to end of queue</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>toAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- block to add to the _blockQueue vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a33dbefb5e66c6702fb2c43356ee0c0ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Queue::put</definition>
+        <argsstring>(Block *toAdd)</argsstring>
+        <name>put</name>
+        <param>
+          <type><ref refid="class_block" kindref="compound">Block</ref> *</type>
+          <declname>toAdd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="37" column="1" bodyfile="src/Queue.cpp" bodystart="23" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>emptyQueue</header>
+      <description><para>clears the queue </para></description>
+      <memberdef kind="function" id="class_queue_1abcaf6e9785189306476e5981177bed4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Queue::emptyQueue</definition>
+        <argsstring>()</argsstring>
+        <name>emptyQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="38" column="1" bodyfile="src/Queue.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getQueueSize</header>
+      <description><para><simplesect kind="return"><para>size of queue on a given moment </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a4b5d91535b1af232d64fc02a944725db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Queue::getQueueSize</definition>
+        <argsstring>()</argsstring>
+        <name>getQueueSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="34" column="1" bodyfile="src/Queue.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>getBlockCount</header>
+      <description><para><simplesect kind="return"><para>the block counter value </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a559caab2e1147a7f0a13eb7b093e0f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Queue::getBlockCount</definition>
+        <argsstring>()</argsstring>
+        <name>getBlockCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="35" column="1" bodyfile="src/Queue.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>writeToFile</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>outfile </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a7aadc3ce796b95ba60b47361d9f97c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Queue::writeToFile</definition>
+        <argsstring>(std::string outFile)</argsstring>
+        <name>writeToFile</name>
+        <param>
+          <type>std::string</type>
+          <declname>outFile</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="39" column="1" bodyfile="src/Queue.cpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>at</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- element to return </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A block pointer which is on the n&apos;th element of vector _blockQueue </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a6f8d170c38f4c326dbc2074964b3373b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_block" kindref="compound">Block</ref> *</type>
+        <definition>Block * Queue::at</definition>
+        <argsstring>(unsigned int n)</argsstring>
+        <name>at</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="33" column="1" bodyfile="src/Queue.cpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>requestBlock</header>
+      <description><para>when a thread requests a block to process, this function returns a pointer to the block which should be processed</para><para><simplesect kind="return"><para>a block pointer </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a394716099a2af0b27cf915905b8567c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_block" kindref="compound">Block</ref> *</type>
+        <definition>Block * Queue::requestBlock</definition>
+        <argsstring>()</argsstring>
+        <name>requestBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="32" column="1" bodyfile="src/Queue.cpp" bodystart="82" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>isEmpty</header>
+      <description><para><simplesect kind="return"><para>true when _blockQueue is empty, false when _blockQueue when not emtpy </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_queue_1a65d9b23c23c917faa44981539bc34be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Queue::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="36" column="1" bodyfile="src/Queue.cpp" bodystart="101" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Deconstructor</header>
+      <memberdef kind="function" id="class_queue_1a00d119db8fa3050da37746e82cbcf94f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Queue::~Queue</definition>
+        <argsstring>()</argsstring>
+        <name>~Queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="40" column="1" bodyfile="src/Queue.cpp" bodystart="108" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_queue_1a5c368481a3bfc8bd0b77d7e652c9510e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Queue::_blockCnt</definition>
+        <argsstring></argsstring>
+        <name>_blockCnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="24" column="1" bodyfile="src/Queue.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_1a527f414250776495c6146fd73f83624f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Queue::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="25" column="1" bodyfile="src/Queue.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_1a97316a89f0406a748afb4abb38cdd5a4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_block" kindref="compound">Block</ref> * &gt;</type>
+        <definition>std::vector&lt;Block *&gt; Queue::_blockQueue</definition>
+        <argsstring></argsstring>
+        <name>_blockQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="27" column="1" bodyfile="src/Queue.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_1a295ff2248b4f1a1f193833a377850020" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex Queue::_requestBlock</definition>
+        <argsstring></argsstring>
+        <name>_requestBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="28" column="1" bodyfile="src/Queue.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_queue_1a2795cbd3cf36b3ce9604ea719fa10c73" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex Queue::_putBlock</definition>
+        <argsstring></argsstring>
+        <name>_putBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Queue.h" line="29" column="1" bodyfile="src/Queue.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>contains a thread save block request function and <ref refid="class_block" kindref="compound">Block</ref> vector </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Queue.h" line="22" column="1" bodyfile="src/Queue.h" bodystart="22" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_queue_1a5c368481a3bfc8bd0b77d7e652c9510e" prot="private" virt="non-virtual"><scope>Queue</scope><name>_blockCnt</name></member>
+      <member refid="class_queue_1a97316a89f0406a748afb4abb38cdd5a4" prot="private" virt="non-virtual"><scope>Queue</scope><name>_blockQueue</name></member>
+      <member refid="class_queue_1a2795cbd3cf36b3ce9604ea719fa10c73" prot="private" virt="non-virtual"><scope>Queue</scope><name>_putBlock</name></member>
+      <member refid="class_queue_1a295ff2248b4f1a1f193833a377850020" prot="private" virt="non-virtual"><scope>Queue</scope><name>_requestBlock</name></member>
+      <member refid="class_queue_1a527f414250776495c6146fd73f83624f" prot="private" virt="non-virtual"><scope>Queue</scope><name>_size</name></member>
+      <member refid="class_queue_1a6f8d170c38f4c326dbc2074964b3373b" prot="public" virt="non-virtual"><scope>Queue</scope><name>at</name></member>
+      <member refid="class_queue_1abcaf6e9785189306476e5981177bed4d" prot="public" virt="non-virtual"><scope>Queue</scope><name>emptyQueue</name></member>
+      <member refid="class_queue_1a559caab2e1147a7f0a13eb7b093e0f5b" prot="public" virt="non-virtual"><scope>Queue</scope><name>getBlockCount</name></member>
+      <member refid="class_queue_1a4b5d91535b1af232d64fc02a944725db" prot="public" virt="non-virtual"><scope>Queue</scope><name>getQueueSize</name></member>
+      <member refid="class_queue_1a65d9b23c23c917faa44981539bc34be7" prot="public" virt="non-virtual"><scope>Queue</scope><name>isEmpty</name></member>
+      <member refid="class_queue_1a33dbefb5e66c6702fb2c43356ee0c0ca" prot="public" virt="non-virtual"><scope>Queue</scope><name>put</name></member>
+      <member refid="class_queue_1a7cfca3637d57c4a9e37351b3426ffd40" prot="public" virt="non-virtual"><scope>Queue</scope><name>Queue</name></member>
+      <member refid="class_queue_1a394716099a2af0b27cf915905b8567c2" prot="public" virt="non-virtual"><scope>Queue</scope><name>requestBlock</name></member>
+      <member refid="class_queue_1a7aadc3ce796b95ba60b47361d9f97c85" prot="public" virt="non-virtual"><scope>Queue</scope><name>writeToFile</name></member>
+      <member refid="class_queue_1a00d119db8fa3050da37746e82cbcf94f" prot="public" virt="non-virtual"><scope>Queue</scope><name>~Queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="class_file_parser" kind="class" language="C++" prot="public">
+    <compoundname>FileParser</compoundname>
+    <includes refid="_file_parser_8h" local="no">FileParser.h</includes>
+      <sectiondef kind="user-defined">
+      <header>Constructor</header>
+      <description><para><simplesect kind="author"><para>Zakaria el Barnoussi (TackticalDude) </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+</para></description>
+      <memberdef kind="function" id="class_file_parser_1acb58172b4650cd8015d5e8cad7d29647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FileParser::FileParser</definition>
+        <argsstring>()</argsstring>
+        <name>FileParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FileParser.h" line="25" column="1" bodyfile="src/FileParser.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>parseFile</header>
+      <description><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>q</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- <ref refid="class_queue" kindref="compound">Queue</ref> object pointer to place the parsed data in </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- name of the file in std::string format </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para></description>
+      <memberdef kind="function" id="class_file_parser_1a07eec02b89d7a3d0cf7e5ea699917df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FileParser::parseFile</definition>
+        <argsstring>(Queue *q, std::string fileName)</argsstring>
+        <name>parseFile</name>
+        <param>
+          <type><ref refid="class_queue" kindref="compound">Queue</ref> *</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FileParser.h" line="26" column="1" bodyfile="src/FileParser.cpp" bodystart="21" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Deconstructor</header>
+      <memberdef kind="function" id="class_file_parser_1a8b41aca52b30e9f357f50e76f3c9cc9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>FileParser::~FileParser</definition>
+        <argsstring>()</argsstring>
+        <name>~FileParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FileParser.h" line="27" column="1" bodyfile="src/FileParser.cpp" bodystart="49" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Parses a file into blocks and places them in a <ref refid="class_queue" kindref="compound">Queue</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/FileParser.h" line="23" column="1" bodyfile="src/FileParser.h" bodystart="23" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_file_parser_1acb58172b4650cd8015d5e8cad7d29647" prot="public" virt="non-virtual"><scope>FileParser</scope><name>FileParser</name></member>
+      <member refid="class_file_parser_1a07eec02b89d7a3d0cf7e5ea699917df6" prot="public" virt="non-virtual"><scope>FileParser</scope><name>parseFile</name></member>
+      <member refid="class_file_parser_1a8b41aca52b30e9f357f50e76f3c9cc9d" prot="public" virt="virtual"><scope>FileParser</scope><name>~FileParser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="_t_o_s___equalizer_8cpp" kind="file" language="C++">
+    <compoundname>TOS_Equalizer.cpp</compoundname>
+    <includes refid="_command_handler_8h" local="yes">CommandHandler.h</includes>
+    <includes refid="_coefficient_8h" local="yes">Coefficient.h</includes>
+    <includes refid="_queue_8h" local="yes">Queue.h</includes>
+    <includes refid="_file_parser_8h" local="yes">FileParser.h</includes>
+    <includes refid="_equalizer_8h" local="yes">Equalizer.h</includes>
+    <incdepgraph>
+      <node id="148">
+        <label>Equalizer.h</label>
+        <link refid="_equalizer_8h_source"/>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>FileParser.h</label>
+        <link refid="_file_parser_8h_source"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>stdlib.h</label>
+      </node>
+      <node id="131">
+        <label>CommandHandler.h</label>
+        <link refid="_command_handler_8h_source"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>Coefficient.h</label>
+        <link refid="_coefficient_8h_source"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>string</label>
+      </node>
+      <node id="130">
+        <label>src/TOS_Equalizer.cpp</label>
+        <link refid="TOS_Equalizer.cpp"/>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>fstream</label>
+      </node>
+      <node id="142">
+        <label>string.h</label>
+      </node>
+      <node id="141">
+        <label>Block.h</label>
+        <link refid="_block_8h_source"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>vector</label>
+      </node>
+      <node id="139">
+        <label>math.h</label>
+      </node>
+      <node id="132">
+        <label>iostream</label>
+      </node>
+      <node id="135">
+        <label>getopt.h</label>
+      </node>
+      <node id="144">
+        <label>mutex</label>
+      </node>
+      <node id="146">
+        <label>thread</label>
+      </node>
+      <node id="140">
+        <label>Queue.h</label>
+        <link refid="_queue_8h_source"/>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>algorithm</label>
+      </node>
+      <node id="137">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_t_o_s___equalizer_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/TOS_Equalizer.cpp" line="15" column="1" bodyfile="src/TOS_Equalizer.cpp" bodystart="15" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>TOS_Equalizer.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>TackticalDude</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Version<sp/><sp/><sp/><sp/><sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Copyright<sp/><sp/><sp/>:<sp/>Your<sp/>copyright<sp/>notice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Description<sp/>:<sp/>Hello<sp/>World<sp/>in<sp/>C++,<sp/>Ansi-style</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//============================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CommandHandler.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Coefficient.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;FileParser.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Equalizer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_command_handler" kindref="compound">CommandHandler</ref><sp/>ch;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_file_parser" kindref="compound">FileParser</ref><sp/>fp;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_queue" kindref="compound">Queue</ref><sp/>startQueue;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_queue" kindref="compound">Queue</ref><sp/>endQueue;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbiquad__t" kindref="compound">biquad_t</ref><sp/>treble;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbiquad__t" kindref="compound">biquad_t</ref><sp/>bass;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>ch.handleStartCommands(argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>fp.parseFile(&amp;startQueue,<sp/>ch.getInputFileName());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Parsed<sp/>file<sp/>into<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>startQueue.getQueueSize()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>blocks.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_coefficient" kindref="compound">Coefficient</ref><sp/>c;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>c.bassCoeffiecient(ch.getBassIntensity(),<sp/>&amp;(bass.b0),<sp/>&amp;(bass.b1),<sp/>&amp;(bass.b2),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;(bass.a1),<sp/>&amp;(bass.a2));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>c.trebleCoefficient(ch.getTrebleIntensity(),<sp/>&amp;(treble.b0),<sp/>&amp;(treble.b1),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;(treble.b2),<sp/>&amp;(treble.a1),<sp/>&amp;(treble.a2));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref><sp/>*eq1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref>(&amp;startQueue,<sp/>&amp;endQueue,<sp/>treble,<sp/>bass,<sp/></highlight><highlight class="stringliteral">&quot;Eq1&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref><sp/>*eq2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref>(&amp;startQueue,<sp/>&amp;endQueue,<sp/>treble,<sp/>bass,<sp/></highlight><highlight class="stringliteral">&quot;Eq2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref><sp/>*eq3<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref>(&amp;startQueue,<sp/>&amp;endQueue,<sp/>treble,<sp/>bass,<sp/></highlight><highlight class="stringliteral">&quot;Eq3&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref><sp/>*eq4<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref>(&amp;startQueue,<sp/>&amp;endQueue,<sp/>treble,<sp/>bass,<sp/></highlight><highlight class="stringliteral">&quot;Eq4&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref><sp/>*eq5<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref>(&amp;startQueue,<sp/>&amp;endQueue,<sp/>treble,<sp/>bass,<sp/></highlight><highlight class="stringliteral">&quot;Eq5&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref><sp/>*eq6<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_equalizer" kindref="compound">Equalizer</ref>(&amp;startQueue,<sp/>&amp;endQueue,<sp/>treble,<sp/>bass,<sp/></highlight><highlight class="stringliteral">&quot;Eq6&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(startQueue.getQueueSize()<sp/>&gt;<sp/>startQueue.getBlockCount())</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>eq1-&gt;stop();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>eq2-&gt;stop();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>eq3-&gt;stop();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>eq4-&gt;stop();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>eq5-&gt;stop();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>eq6-&gt;stop();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>endQueue.writeToFile(ch.getOutputFileName());</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/TOS_Equalizer.cpp"/>
+  </compounddef>
+</doxygen>

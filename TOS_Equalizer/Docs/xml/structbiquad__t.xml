@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structbiquad__t" kind="struct" language="C++" prot="public">
+    <compoundname>biquad_t</compoundname>
+    <includes refid="_coefficient_8h" local="no">Coefficient.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbiquad__t_1a1ce93a5333970082203532c9ffdf5828" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double biquad_t::b0</definition>
+        <argsstring></argsstring>
+        <name>b0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="23" column="1" bodyfile="src/Coefficient.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbiquad__t_1a3f8e82acc26d35a1563b4bbead340141" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double biquad_t::b1</definition>
+        <argsstring></argsstring>
+        <name>b1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="23" column="1" bodyfile="src/Coefficient.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbiquad__t_1aeb9211d4485eca4e49caceb95e168fb2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double biquad_t::b2</definition>
+        <argsstring></argsstring>
+        <name>b2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="23" column="1" bodyfile="src/Coefficient.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbiquad__t_1a9ce3c9940d0f31b183705881e06c6382" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double biquad_t::a1</definition>
+        <argsstring></argsstring>
+        <name>a1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="23" column="1" bodyfile="src/Coefficient.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbiquad__t_1a1cf4a4cf8a065f8eea2f5e1699946cb4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double biquad_t::a2</definition>
+        <argsstring></argsstring>
+        <name>a2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Coefficient.h" line="23" column="1" bodyfile="src/Coefficient.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Contains doubles for bass and treble calculations b0 - b coefficient 0 b1 - b coefficient 1 b2 - b coefficient 2 a0 - a coefficient 0 a1 - a coefficient 1. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Coefficient.h" line="22" column="1" bodyfile="src/Coefficient.h" bodystart="22" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structbiquad__t_1a9ce3c9940d0f31b183705881e06c6382" prot="public" virt="non-virtual"><scope>biquad_t</scope><name>a1</name></member>
+      <member refid="structbiquad__t_1a1cf4a4cf8a065f8eea2f5e1699946cb4" prot="public" virt="non-virtual"><scope>biquad_t</scope><name>a2</name></member>
+      <member refid="structbiquad__t_1a1ce93a5333970082203532c9ffdf5828" prot="public" virt="non-virtual"><scope>biquad_t</scope><name>b0</name></member>
+      <member refid="structbiquad__t_1a3f8e82acc26d35a1563b4bbead340141" prot="public" virt="non-virtual"><scope>biquad_t</scope><name>b1</name></member>
+      <member refid="structbiquad__t_1aeb9211d4485eca4e49caceb95e168fb2" prot="public" virt="non-virtual"><scope>biquad_t</scope><name>b2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
